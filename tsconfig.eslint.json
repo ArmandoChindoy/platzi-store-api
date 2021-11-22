@@ -1,0 +1,7 @@
+{
+  "ts-standard": {
+    "project": "path/to/tsconfig.json",
+    "ignore": ["dist", "node_modules/**/*"],
+    "extensions": ["js", "ts"]
+  }
+}
