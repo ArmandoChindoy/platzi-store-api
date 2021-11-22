@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 require('dotenv').config();
 
 const PORT = process.env.PORT;
-// const HOST = '0.0.0.0';
+const HOST = '0.0.0.0';
 
 const app = express();
 
@@ -60,6 +60,6 @@ app.get('/api/v1', (req: Request, res: Response) => {
   res.json(initialState);
 });
 
-app.listen(3000, () => {
+app.listen(3000,HOST, () => {
   console.log(`App listening at http://localhost:${PORT}`);
 });
